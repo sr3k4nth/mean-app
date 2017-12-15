@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var mongojs = require('mongojs');
-var db = mongojs('mongodb://tunuguntla:srikanth.123@ds129344.mlab.com:29344/contacts',['contacts']);
+var db = mongojs('mongodb://rootname:root@ds129344.mlab.com:29344/contacts',['contacts']);
 app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.json());
 app.get('/disp', function(req, res){

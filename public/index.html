@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact List App</title>
+	  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+<style>
+.sr
+{
+	 background: linear-gradient(to left, rgba(255,0,1,255), rgba(255,255,0,1));
+	opacity: 0.8;
+}
+.sr1
+{
+	border-bottom: 1px solid red;
+}
+</style>
+</head>
+	<body ng-app="myApp" class="sr">
+				<h1 align="center" class="sr1">|A Simple Note Maker for Contacts |<br>
+				</h1>
+				<!-- https://zellwk.com/blog/crud-express-mongodb/
+<br><br>
+				http://www.bogotobogo.com/MEAN-Stack/MEAN-Stack-MongoDB-ExpressJS-AngularJS-NodeJS-ToDoList-App.php -->
+				<br><br><br>
+		<div class="container" ng-controller="AppCtrl">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Name </th>
+						<th>Email</th>
+						<th>Contact Number </th>
+					</tr>
+				</thead>
+				<tr>
+				   <td><input class="form-control" ng-model="contact.name"></td>
+          <td><input class="form-control" ng-model="contact.email"></td>
+          <td><input class="form-control" ng-model="contact.phone"></td>
+<td><button class="btn btn-primary" ng-click="addContact()">Add Contact</button></td>
+<td><button class="btn btn-warning" ng-click="updatecontact()">Update</button></td>
+				</tr>
+				<tbody>
+					<tr ng-repeat="contacts in contactlist">
+						<td>{{contacts.name}}</td>
+						<td>{{contacts.email}}</td>
+						<td>{{contacts.phone}}</td>
+						<td><button class="btn btn-danger" ng-click="deletecontact(contacts._id)">Remove</button></td>
+						<td><button class="btn btn-warning" ng-click="editcontact(contacts._id)">Edit</button></td>
+					</tr>
+				</tbody>
+			</table>
+			
+
+		<script src="controller.js"></script>
+	</body>
+</html>

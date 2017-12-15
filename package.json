@@ -1,0 +1,22 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "todo app using mean.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "forever": "^0.15.3",
+    "http": "0.0.0",
+    "method-override": "^2.3.10",
+    "mongodb": "^3.0.0-rc0",
+    "mongojs": "^2.4.1",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.12.5"
+  }
+}

@@ -67,7 +67,7 @@ app.put('/updatecontact/:id', function (req, res) {
   );
 });
 
-// MongoClient.connect('mongodb://tunuguntla:srikanth.123@ds137256.mlab.com:37256/contacts', function(err,database){
+// MongoClient.connect(@ds137256.mlab.com:37256/contacts', function(err,database){
 
 /*db.collection('contacts').insert(
 [
@@ -93,4 +93,4 @@ app.put('/updatecontact/:id', function (req, res) {
 
 app.listen(8080);
 console.log("app is running");
-// mongodb://<dbuser>:<dbpassword>@ds137256.mlab.com:37256/contacts  (important link to be seen)
+
